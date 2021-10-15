@@ -1,0 +1,20 @@
+{
+  "files": {
+    "frontend/base.html": [
+      {
+        "id": "d3e2e2ab-db13-485c-a291-b8143dfbe688",
+        "line": 12,
+        "version": 284,
+        "index": 356
+      }
+    ],
+    "templates/quiz.js": [
+      {
+        "id": "042968f0-2768-4cdf-bcde-3cb210a8f25a",
+        "line": 1,
+        "version": 0,
+        "index": 0
+      }
+    ]
+  }
+}

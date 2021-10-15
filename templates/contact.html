@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %} 
+<body>
+
+    <!-- contact form-->
+    <h2 class="centre">Contact Us!</h2>
+    <form id="form">
+        
+        <div class="field">
+          <label for="name">name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="field">
+            <label for="reply_to">email</label>
+            <input type="text" name="reply_to" id="reply_to">
+          </div>
+        <div class="field">
+          <label for="subject">subject</label>
+          <input type="text" name="subject" id="subject">
+        </div>
+        <div class="field">
+          <label for="message_html">message_html</label>
+          <input type="text" name="message_html" id="message_html">
+        </div>
+        
+        
+        <!-- submit button-->
+        <input type="submit" id="button" value="Send Email" >
+      </form>
+
+      <!-- links to email js and user -->
+      
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('user_Naohm1ds1DN86fgMipSvk')
+      </script>
+</body>
+
+{% endblock %}
