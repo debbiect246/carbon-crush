@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block content %} 
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Carbon Crush Leaderboard</title>
+    <link rel="stylesheet" href="lboard_styles.css">
+</head> 
+<body>
+
+<div class="wrapper">
+    <div class="lboard_section">
+        <div class="lboard_tabs"></div>
+            <div class="tabs">
+                <ul>
+                    <li data-li="week">Total Team Scores</li>
+                    <li class="active" data-li="month">Month</li>
+                    <li data-li="year">Year</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lboard_wrap"></div>
+            <div class="lboard_item week" style="display: none">
+                <div class="lboard_mem">
+                    <div class="img">
+                        <img src="lboard_1.png" alt="picture_1">
+                    </div> 
+                    <div class="name_bar">
+                        <p><span>1.</span> Marketing</p>    
+                        <div class="bar_wrap">
+                            <div class="inner_bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="points">
+                        128 points
+                    </div>
+                </div>  
+                <div class="lboard_mem">
+                    <div class="img">
+                        <img src="lboard_2.png" alt="picture_2">
+                    </div> 
+                    <div class="name_bar">
+                        <p><span>2.</span> Finance</p>    
+                        <div class="bar_wrap">
+                            <div class="inner_bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="points">
+                        96 points
+                    </div>
+                </div>
+                <div class="lboard_mem">
+                    <div class="img">
+                        <img src="lboard_3.png" alt="picture_3">
+                    </div> 
+                    <div class="name_bar">
+                        <p><span>3.</span> Analytics</p>    
+                        <div class="bar_wrap">
+                            <div class="inner_bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="points">
+                        84 points
+                    </div>
+                </div> 
+            </div>   
+                <div class="lboard_item month"></div> 
+                
+            <div class="lboard_item year"></div>
+                
+                
+        </div>
+
+    </div>
+</div>    
+    
+</body>  
+</head>
+
+
+{% endblock %}

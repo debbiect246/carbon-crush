@@ -1,12 +1,35 @@
-{% extends 'base.html' %}
-{% block content %} 
-<body>
-    <div class="container-fluid">
-      <div class="row">
-        <h3 class="centre">Welcome to Carbon Crush!</h3>
-        <p class="centre">We are a group of coders who are keen to help you make a difference to the planet.  Please have a look around the site which contains information on climate change, the importance of minimising our emissions of carbon dioxide and provides you with an opportunity to take a quiz on climate change and then to make a pledge to reduce your carbon emmisions</p>
-      </div> 
-    </div>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Carbon Crush</title>
 
-{% endblock %}
+        
+        <!-- links to font awesome, bootstrapcdn and style sheet -->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        
+        <link rel="stylesheet" href="{{ url_for('.static', filename='styles.css') }}" type="text/css" /> 
+        <link rel="stylesheet" href="{{ url_for('.static', filename='lboard_styles.css') }}" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link rel="icon" type="image/png" href=" /static/images/globe.png" />
+
+        <title>Carbon Crush</title>
+        
+    </head>
+
+
+    <body>
+        
+    <!-- Navigation --> 
+    <!-- using bootstrap 4 to style navbar -->
+    <div class="container-fluid">
+        <div class="earthcontainer"> <a href="{{ url_for('calculator') }}">
+            <center><img src="../static/images/CC - logo + text JPEG.jpeg" alt="Notebook" style="width:50%";></center></a>
+        </div>
+        
+</body>

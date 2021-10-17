@@ -13,10 +13,6 @@ def info():
 @app.route('/pledge/')
 def pledge():
     return flask.render_template('pledge.html')
-
-@app.route('/game/')
-def game():
-    return flask.render_template('game.html')
   
 @app.route('/contact/')
 def contact():
@@ -25,7 +21,22 @@ def contact():
 @app.route('/calculator/')
 def calculator():
     return flask.render_template('calculator.html')
+#logic goes into here 
+@app.route('/leaderboard/')
+def leaderboard():
+    return flask.render_template('leaderboard.html')
 
+@app.route('/your_scores/')
+def your_scores():
+  return flask.render_template('your_scores.html')
+
+@app.route('/green_queens/')
+def green_queens():
+  return flask.render_template('green_queens.html')
+
+@app.route('/quiz/')
+def quiz():
+  return flask.render_template('quiz.html')
 
 # Start the app running and listening on a known port
 
