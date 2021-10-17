@@ -27,17 +27,15 @@
         
     <!-- Navigation --> 
     <!-- using bootstrap 4 to style navbar -->
-<div class="container-fluid">      
-     <nav class="navbar navbar-expand-sm bg-dark">                               
-              
-          <ul class="navbar-nav">   
-                                  
+    <div>
+      <nav class="navbar">
+            <ul>                        
               <li class="nav-item">
                   <a class="nav-link" href="{{ url_for('info') }}">Home</a>
               </li>
 
               <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('calculator') }}">Calculator</a>
+                  <a class="nav-link" href="{{ url_for('calculator') }}">Game</a>
               </li>
 
               <li class="nav-item">
@@ -47,34 +45,35 @@
               <li class="nav-item">
                   <a class="nav-link" href="{{ url_for('your_scores') }}">Your Scores</a>
               </li>
-
           </ul>
-            
-          
       </nav>
-    </div>            
-    <div class="container-fluid">
-        <div class="earthcontainer"> <a href="{{ url_for('info') }}">
-            <center><img src="../static/images/GQ - Natasha.png" alt="Notebook" style="width:25%;"></center></a>
-        </div>
-        
-        <center><h5 class="text-hover"><p>Green Queens is a female-led team of creators and developers supporting sustainable lifestyles.</p>
-        <p>Green Queens were brought together by <a href=https://codefirstgirls.org.uk/>Code First Girls</a>.</p></h5><center>
-        
-        <br><br>
-        
-        <h5><p><b>Green Queens Team</b></p>
-        <ul>
-          <li>Natasha</li>
-          <li>Debbie</li>
-          <li>Zeesha</li>
-          <li>Gabriella</li>
-          <li>Chloe</li>
-          <li>Carys</li>
-        </ul>
-        </h5><center>
-
+</div>
+<br><br><br><br>
+<div class="container-fluid">
+    <div class="earthcontainer"> <a href="{{ url_for('info') }}">
+        <center><img src="../static/images/GQ - Natasha.png" alt="Green Queens" style="width:25%;"></center></a>
     </div>
+    
+    <center><h5 class="text-hover"><p>Green Queens is a female-led team of creators and developers supporting sustainable lifestyles.</p>
+
+    <p>Green Queens were brought together by <a href=https://codefirstgirls.org.uk/>Code First Girls</a> October 2021 as part of their <a href=https://www.beazley.com/london_market.html>Beazley</a> sponsored 2021 Hackathon.</p></h5>
+    
+    <center>
+    
+    <br><br>
+    
+    <h5><p><b>Green Queens Team</b></p>
+    <ul>
+      <li>Natasha</li>
+      <li>Debbie</li>
+      <li>Zeesha</li>
+      <li>Gabriella</li>
+      <li>Chloe</li>
+      <li>Carys</li>
+    </ul>
+    </h5><center>
+
+</div>
              
             
     

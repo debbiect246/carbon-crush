@@ -77,29 +77,24 @@ body {
 }
 
 .navbar{
-  position: relative;
+  position: fixed;
   width: 100%;
   border: none;
   outline: none;
   shadow: none;
-  background-color: #FFFFFF;
-  color: white;
+  background-color: #F4279D;
+  color: #F4279D;
   text-align: center;
 }
 
-.nav justify-content-center{
-  position: relative;
-  width: 100%;
-  border: none;
-  outline: none;
-  shadow: none;
-  background-color: #FFFFFF;
-  color: white;
-  text-align: center;
-}
+
 .navbar a:hover {
-  color: #F4279D;
+  color: #68C462;
   background: none;
+}
+
+.navbar a:active {
+  color: #68C462;
 }
 
 .navbar-brand{
@@ -155,6 +150,15 @@ input[type="submit"] {
   color: #fff;
   border: none
 }
+
+.leaderboard-title{
+  color: #F4279D;
+  text-align: center
+}
+.content-table{
+  text-align: center
+}
+
 
 
 /*Bootstrap 4 breakpoints */

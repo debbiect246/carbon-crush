@@ -27,30 +27,29 @@
         
     <!-- Navigation --> 
     <!-- using bootstrap 4 to style navbar -->
-      <div class="navbar">
-      <nav class="nav justify-content-center">
+    <div>
+      <nav class="navbar">
             <ul>                          
-                <li class="nav-item">
+                <li >
                     <a class="nav-link" href="{{ url_for('info') }}">Home</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('calculator') }}">Calculator</a>
+                <li >
+                    <a class="nav-link" href="{{ url_for('calculator') }}">Game</a>
                 </li>
 
-                <li class="nav-item">
+                <li >
                     <a class="nav-link" href="{{ url_for('leaderboard') }}">Leaderboard </a>
                 </li>
 
-                <li class="nav-item">
+                <li >
                     <a class="nav-link" href="{{ url_for('your_scores') }}">Your Scores</a>
                 </li>
             </ul> 
-        </nav>
-      </div>
-    
-    </div>            
-    <div class="container-fluid">
+      </nav>
+    </div>
+<br><br><br>
+    <div>
         <div class="earthcontainer"> <a href="{{ url_for('info') }}">
             <center><img src="../static/images/CC - text logo website.png" alt="Notebook" style="width:50%;"></center></a>
         </div>
@@ -100,14 +99,6 @@
    </footer>
       
 
-        <!-- jquery to activate buttons 
-        
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('.collapsible').collapsible();
-                $('select').material_select();
-            });
-        </script> -->
     
     </body>
     

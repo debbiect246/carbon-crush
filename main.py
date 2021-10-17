@@ -39,5 +39,6 @@ def quiz():
   return flask.render_template('quiz.html')
 
 # Start the app running and listening on a known port
+#must be here or app wont Run
 
 web.run(app)
