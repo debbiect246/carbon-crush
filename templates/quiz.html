@@ -2,11 +2,32 @@
 {% block content %} 
 <body>
   <div class="container-fluid">
-      <div class="text-hover">
-        <center><h5><b>QUIZ</a></b></h5>
-    
-      </div>
+    <div class="text-hover">
+      <center><h5><b>QUIZ</a></b></h5>
     </div>
+
+    <!--QUIZ STRUCTURE-->
+    <center>
+    <div class="quiz_container">
+      <div id="question_container" >
+        <div id="question">Question</div><br><br>
+        <div id="answer_buttons" class="btn_grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+      </div>
+<br><br>
+      <div class="controls">
+        <button id="start_btn" class="start_btn btn">Start</button>
+        <button id="next_btn" class="next_btn btn hide">Next</button>
+
+      </div>
+
+    </div>
+    </center>
+  </div>
 
 </body>
 

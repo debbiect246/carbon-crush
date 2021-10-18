@@ -1,128 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap')
-
-*{
-    list-style: none;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box; 
-
-}
-
-body{
-    background: #ffffff
-
-}
-
-.wrapper{
-    width: 100%;
-    height: 100%;
-}
-
-.lboard_section{
-    width: 500px;
-    height: 400px;
-    margin: 100px auto 0;
-    background: #7ed957;
-    border-radius: 5px;
-    padding: 25px 40px;
-    position: relative; 
-
-}
-
-.lboard_section ul{
-    display: flex; 
-}
-
-.lboard_section ul li{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 600;
+.leaderboard-title{
     color: #000000;
-    cursor: pointer; 
+    text-align: center;
+    padding-left;: 15px
+  }
+  .leaderboard-table{
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 12px;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    .leaderboard-table thead tr {
+        background-color: #7ED957;
+        color: #ffffff;
+        text-align: left;
+    }
+    .leaderboard-table th,
+.leaderboard-table td {
+    padding: 12px 15px;
+}
+.leaderboard-table tbody tr {
+    border-bottom: 1px solid #dddddd;
 }
 
-.lboard_section ul li:hover,
-.lboard_section ul li.active{
-    color: #ffffff;
+.leaderboard-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
 }
 
-.lboard_wrap{
-    position: relative;
-    top: 70px;
-    left: 40px;
-    background: #2a6848;
-    width: 50%;
-    height: 50%;
-    border-radius: 25px;
-
+.lederboard-table tbody tr:last-of-type {
+    border-bottom: 2px solid #7ED957;
 }
 
-.lboard_wrap .lboard_item{
-    padding:25px;
-
-}
-
-.lboard_wrap .lboard_item .lboard_mem {
-    display: flex;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid #ffffff;
-}
-
-.lboard_wrap .lboard_item .lboard_mem:first-child{
-    border-bottom: 0;
-    padding-bottom: 0;
-}    
-
-.lboard_wrap .lboard_item .lboard_mem:last-child{
-    border-bottom: 0;
-    padding-bottom: 0;
-}    
-
-.lboard_wrap .lboard_ .img{
-    width: 50px;    
-}
-
-.lboard_section .lboard_mem .img img{
-    display: block;
-    width: 100%;
-}
-
-.lboard_wrap .lboard_item .name_bar{
-    margin: 0 20px;
-    width: calc(100% - 150px);
-}
-
-.lboard_wrap .lboard_item .name_bar p span{
-    margin-right: 5px;
-}
-
-.lboard_wrap .lboard_item .points{
-    width: 100px;
-    color: #000000;
-}
-
-.lboard_wrap .lboard_item .bar_wrap{
-    height: 5px;
-    width: 100px;
-    background: #000000;
-    border-radius: 5px;
-    margin-top: 5px;
-    position: relative;
-    overflow: hidden;    
-}
-
-.lboard_wrap .lboard_item .bar_wrap .inner_bar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 5px;
-    background: #ffffff;
-    border-radius: 5px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-
-
-
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #7ED957;
 }

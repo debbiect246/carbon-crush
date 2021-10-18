@@ -1,35 +1,39 @@
 {% extends 'base.html' %}
 {% block content %} 
 <body>
-    <div class="container-fluid">
-      <center><h5><b>Make your Environmental Pledge</b></h5>
-      </center> 
-    </div>
-    <!-- example placeholder for pledge form-->
-    <br><br>
-    <form id="form">
-        
-        <div class="field">
-          <label for="name">name</label>
-          <input type="text" name="name" id="name">
-        </div>
-        <div class="field">
-            <label for="reply_to">email</label>
-            <input type="text" name="reply_to" id="reply_to">
-          </div>
-        <div class="field">
-          <label for="subject">subject</label>
-          <input type="text" name="subject" id="subject">
-        </div>
-        <div class="field">
-          <label for="message_html">message_html</label>
-          <input type="text" name="message_html" id="message_html">
-        </div>
-        
-        
-        <!-- submit button-->
-        <input type="submit" id="button" value="Submit" >
+
+    <div>
+      <form method="post" action="/Tests/Post/">      
+        <fieldset class="checkbox">
+          <legend><b>Make your Enviornmental Pledge</b></legend>
+   
+          <input type="checkbox" value="water_bottle" class="checkbox_style">Fill up and use a re-usable water-bottle<br>      
+          <input type="checkbox" value="coffee_cup">Bring a re-usable coffee cup for your daily Pret/Starbucks Coffee<br>      
+          <input type="checkbox" value="cycle">Cycle to work<br>
+          <input type="checkbox" value="clothes">Commit to buying no new clothes for a month<br>
+          <input type="checkbox" value="rent_clothes">Rent an item of clothing for a special occasion instead of buying new<br>
+          <input type="checkbox" value="less_meat">Eat less meat<br>
+          <input type="checkbox" value="grow_your_own">Grow your own vegetables or buy local food<br>
+          <input type="checkbox" value="no-lift">Walk the stairs instead of taking the lift<br>
+          <input type="checkbox" value="single_use_plastic">Cut out single use plastic<br>
+          <input type="checkbox" value="litter">Pick up litter from your local neighbourhood<br>
+          <input type="checkbox" value="email_MP">Email you local MP to endorse anti-plastic legislation<br>
+          <input type="checkbox" value="Refill_app">Download the Refill App to find your nearest refill point - <b>and use it</b><br>
+          <input type="checkbox" value="supermarket">Shop at your nearest zero-waste supermarket<br>
+          <input type="checkbox" value="Repair">Repair broken or damaged items at your nearest repair cafe<br>
+          <input type="checkbox" value="freecycle">List your unwanted items on Freecycle to find a better home<br>
+          <input type="checkbox" value="Talk">Talk to your colleagues, friends and family about environmental issues and how you can make a difference<br>
+          <input type="checkbox" value="eat">Make your own breaksfast, lunch and dinner with fresh ingredients<br><br>      
+          
+        <!--submit button-->
+          <center><input type="submit" value="Enter Your Pledge" /></center>
+          
+          <br>
+        </fieldset>      
       </form>
+    </div>
+    
+
 
 </body>
 

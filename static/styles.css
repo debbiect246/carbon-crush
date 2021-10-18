@@ -85,8 +85,8 @@ body {
   background-color: #F4279D;
   color: #F4279D;
   text-align: center;
+  z-index: 10;
 }
-
 
 .navbar a:hover {
   color: #68C462;
@@ -146,18 +146,11 @@ input[type="submit"] {
   display: block;
   padding: 6px 30px;
   font-size: 14px;
-  background-color: #4460AA;
+  background-color: #68C462;
   color: #fff;
   border: none
 }
 
-.leaderboard-title{
-  color: #F4279D;
-  text-align: center
-}
-.content-table{
-  text-align: center
-}
 
 
 
