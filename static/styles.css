@@ -151,8 +151,95 @@ input[type="submit"] {
   border: none
 }
 
+.btn{
+  color: #ffffff;
+  background: #F4279D;
+  border-radius: 3px;
+}
 
+.btn:hover{
+  color: #68C462;
+  background: #F4279D;
+}
 
+.fieldset{
+  background: #F4279D;
+  color: #ffffff;
+  border-radius: 10px;
+  width: 75%;
+}
+
+.fieldset2{
+  background: #FFFFFF;
+  color: #F4279D;
+  border-radius: 6px;
+  padding-right: 35px;
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 40%;
+  font-size: 18px;
+  float: left;
+}
+
+.label{
+  float: left;
+}
+
+.span{
+  display: block;
+  overflow: hidden;
+  padding: 0px 4px 0px 6px;
+}
+
+.checkbox{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.checkbox_style{
+  border: 1px;
+}
+
+.carbon_crush{
+  background-color:#F4279D;
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+  color: #ffffff;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.welcome{
+  background: #FFFFFF;
+  color: #F4279D;
+  border-radius: 6px;
+  width: 50%;
+  height: 80%;
+  font-size: 18px;
+  float: right;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.column1of3, .column2of3, .column3of3 {
+  width: 30%;
+  float: left;
+  margin: 10px;
+  clear: right;
+}
+
+.additional_resources{
+  clear: both;
+}
 
 /*Bootstrap 4 breakpoints */
 /* Small devices (landscape phones, 544px and up) */

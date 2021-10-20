@@ -1,17 +1,18 @@
 {% extends 'base.html' %}
 {% block content %} 
 <body>
+
   <div class="container-fluid">
     <div class="text-hover">
-      <center><h5><b>QUIZ</a></b></h5>
-    </div>
-
-    <!--QUIZ STRUCTURE-->
-    <center>
+    <center><h5><b>QUIZ</b></h5>
+    
+    
+    <fieldset class="fieldset">
     <div class="quiz_container">
-      <div id="question_container" >
-        <div id="question">Question</div><br><br>
-        <div id="answer_buttons" class="btn_grid">
+      <div id="quiz" >
+        <div><h5>Over the last 7 days ...<h5></div>
+        <div id="question"><h5>Question</h5></div><br><br>
+        <div id="answers" class="btn_grid">
           <button class="btn">Answer 1</button>
           <button class="btn">Answer 2</button>
           <button class="btn">Answer 3</button>
@@ -20,13 +21,18 @@
       </div>
 <br><br>
       <div class="controls">
-        <button id="start_btn" class="start_btn btn">Start</button>
-        <button id="next_btn" class="next_btn btn hide">Next</button>
+        <button id="next" class="next_btn btn ">Next</button>
+        <button id="submit" class="submit_btn btn">Submit</button>
+        
+        
+        
 
       </div>
-
+<br><br>
     </div>
+    </fieldset>
     </center>
+    </div>
   </div>
 
 </body>

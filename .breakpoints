@@ -4,7 +4,7 @@
       {
         "id": "982bfe17-2834-4be2-9725-d70d179c5d41",
         "line": 1,
-        "version": 60,
+        "version": 295,
         "index": 0
       }
     ],
@@ -14,6 +14,14 @@
         "line": 12,
         "version": 284,
         "index": 356
+      }
+    ],
+    "templates/leaderboard.html": [
+      {
+        "id": "3bc38355-d23e-4ec2-860e-b7a6279f3584",
+        "line": 46,
+        "version": 248,
+        "index": 1130
       }
     ],
     "templates/quiz.js": [

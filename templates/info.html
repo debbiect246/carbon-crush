@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 {% block content %} 
 <body>
-    <div class="container-fluid">
-          <center><h5><b>DID YOU KNOW?</b></h5></center> 
-    </div>
     
-    <div class="row text-lg-left">
-      <h5><b>Carbon Footprint ...</b></h5>
+    <div>
+      <center><img src="../static/images/CC - CO2 cloud.png" alt="Carbon Crush" style="width:35%;"></center>
+
+      
+
+      <h5><b>Did you know? ...</b></h5>
      
       <div class="CF">
           <h5><p>Carbon Footprint can be used to measure the amount of carbon dioxide emissions as a result of an individual's, organisation's, or  nation's actions.</p></h5>
@@ -16,68 +17,91 @@
         <h5><p>Human influence has warmed the atmosphere, ocean and land (source - IPCC, 2021)</p></h5>
       </div>
 
-      <div>
-        <div class="Fact1">
-            <h5><p>Human activity has warmed the climate at a rate which is unprecedented in the last 2000 years.</p></h5>
-        </div>
-    
-        <div class="Fact2">
-            <h5><p>The effects of human induced climate change are felt in every region globally.</p></h5>
-        </div>
-    
-        <div class="Fact3">
-           <h5><p>Climate change will disproportionately impact the global south due to increased vulnerability and lower adaptive capacity.</p></h5>
-        </div>
-
-        <div>
-          <h5><p>10,000 items of clothing are sent to landfill every five minutes (equivalent to £140 million in value every year) (source - Keep Britain Tidy).</h5></p>
-        </div>
-
+      <div class="Fact1">
+          <h5><p>Human activity has warmed the climate at a rate which is unprecedented in the last 2000 years.</p></h5>
+      </div>
+  
+      <div class="Fact2">
+          <h5><p>The effects of human induced climate change are felt in every region globally.</p></h5>
+      </div>
+  
+      <div class="Fact3">
+          <h5><p>Climate change will disproportionately impact the global south due to increased vulnerability and lower adaptive capacity.</p></h5>
       </div>
 
-      <div class="Myth">
-        <div>
-            
-            <center><h2>Myth VS. Science</h2></center>
-            
-            <center>
-            <img src="../static/images/CC - icon lightbulb.png" alt="Carbon Crush" style="width:10%;"></center>
-            
-            <h5><b>Myth 1. The climate has changed before so we do not need to worry</b></h5>
-            <h5><p>It is true that the climate has hugely changed over the course of it’s 4.5 billion year existence. However, the climate responds to whatever forces it to change at the time, and currently humans are the dominant influence.</p></h5>
-        </div>
-    
-        <div>
-            <center>
-            <img src="../static/images/CC - icon location.png" alt="Carbon Crush" style="width:10%;"></center>
+      <div>
+        <h5><p>10,000 items of clothing are sent to landfill every five minutes (equivalent to £140 million in value every year) (source - Keep Britain Tidy).</h5></p>
+      </div>
 
-            <h5><b>Myth 2. Climate change is a future problem</b></h5>
-            <h5><p>We are already seeing the devastating effects of climate change, it is the biggest environmental challenge humanity has ever seen. Climate change is already adversely affecting the oceans, human health, agriculture, sea level, biodiversity and the economy.</p></h5>
+<br>
+
+    </div><!--END DID YOU KNOW?-->
+
+    <div class="Myth">
+      
+      <div>   
+          <center><h2>Myth VS. Science</h2></center>
+            
+          <div class="column1of3">
+          <center><img src="../static/images/CC - icon lightbulb.png" alt="Carbon Crush" style="width:40%;"></center>
+          
+          <center><h5><b>Myth 1.</b></h5></center>
+          <h5><b>"The climate has changed before so we do not need to worry"</b></h5>
+          <h5><p>It is true that the climate has hugely changed over the course of it’s 4.5 billion year existence. However, the climate responds to whatever forces it to change at the time, and currently humans are the dominant influence.</p></h5>
+          </div>
+    
+          <div>
+          <div class="column2of3">
+          <center><img src="../static/images/CC - icon location.png" alt="Carbon Crush" style="width:40%;"></center>
+
+          <center><h5><b>Myth 2.</b></h5></center>
+          <h5><b>"Climate change is a future problem"</b></h5>
+          <br>
+          <h5><p>We are already seeing the devastating effects of climate change, it is the biggest environmental challenge humanity has ever seen. Climate change is already adversely affecting the oceans, human health, agriculture, sea level, biodiversity and the economy.</p></h5>
+          </div>
         </div>
     
         <div>
+            <div class="column3of3">
             <center>
-            <img src="../static/images/CC - icon world.png" alt="Carbon Crush" style="width:10%;"></center>
+            <img src="../static/images/CC - icon world.png" alt="Carbon Crush" style="width:40%;"></center>
             
-            <h5><b>Myth 3. Climate models are unreliable</b></h5>
+            <center><h5><b>Myth 3.</b></h5></center>
+            <h5><b>"Climate models are unreliable"</b></h5>
+            <br>
             <h5><p>Climate models are mathematical representations of major drivers of climate, including the atmosphere, oceans, land and ice which can be used to recreate past climate or predict future climate. Many models have accurately projected changes in global surface temperature.</p></h5>
+            </div>
         </div>
-      </div>
 
-      <div>
+<br><br>
+
+        <center><img src="../static/images/CC - footprint.png" alt="Carbon Crush" style="width:20%;"></center>
+
+      </div><!--END MYTHS VS SCIENCE-->
+      
+
+      <div class="additional_resources">
         <center><h2>Additonal Resources</h2></center>
         
         <br>
         <div class="text-hover">
         <h5><p><a href="https://www.byrotation.com/" target="blank">ByRotation - LEND.RENT.ROTATE</a></p></h5>
+        
         <h5><p><a href="http://martindorey.com/product/no-more-plastic/" target="_blank">No.More.Plastic by Martin Dorey</a></p></h5>
+        
         <h5><p><a href="https://earthshotprize.org/" target="_blank">Earthshot Prize</a></p></h5>
+        
         <h5><p><a href="https://footprint.wwf.org.uk/#/" target="_blank">WWF Carbon Calculator</a></p></h5>
+        
         <h5><p><a href ="https://eco-age.com/" target="_blank">Ecoage - progressive sustainability solutions and creative communications</a></p></h5>
+        
         <h5><p><a href="https://www.refill.org.uk/" target="_blank">Refill App</a></p></h5>
+        
         <h5><p><a href="https://www.freecycle.org/" target="_blank">Freecycle</a></p></h5>
+        
         <h5><p><a href="https://www.keepbritaintidy.org/news/waste-less-live-more-slow-down-fast-fashion" target="_blank">Keep Britain Tidy</a></p></h5>
-      </div>
+      
+      </div><!--END ADDITIONAL RESOURCES-->
 
         <img class="img" src="">
         <img class="img" src="">

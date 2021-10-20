@@ -1,29 +1,48 @@
 {% extends 'base.html' %}
-{% block content %} 
+{% block content %}
 <body>
 
     <div>
-      <form method="post" action="/Tests/Post/">      
+      <form name = "pledges" action ="#" method = "POST" >      
         <fieldset class="checkbox">
-          <legend><b>Make your Enviornmental Pledge</b></legend>
+          <legend><b>Make your Environmental Pledge</b></legend>
    
-          <input type="checkbox" value="water_bottle" class="checkbox_style">Fill up and use a re-usable water-bottle<br>      
-          <input type="checkbox" value="coffee_cup">Bring a re-usable coffee cup for your daily Pret/Starbucks Coffee<br>      
-          <input type="checkbox" value="cycle">Cycle to work<br>
-          <input type="checkbox" value="clothes">Commit to buying no new clothes for a month<br>
-          <input type="checkbox" value="rent_clothes">Rent an item of clothing for a special occasion instead of buying new<br>
-          <input type="checkbox" value="less_meat">Eat less meat<br>
-          <input type="checkbox" value="grow_your_own">Grow your own vegetables or buy local food<br>
-          <input type="checkbox" value="no-lift">Walk the stairs instead of taking the lift<br>
-          <input type="checkbox" value="single_use_plastic">Cut out single use plastic<br>
-          <input type="checkbox" value="litter">Pick up litter from your local neighbourhood<br>
-          <input type="checkbox" value="email_MP">Email you local MP to endorse anti-plastic legislation<br>
-          <input type="checkbox" value="Refill_app">Download the Refill App to find your nearest refill point - <b>and use it</b><br>
-          <input type="checkbox" value="supermarket">Shop at your nearest zero-waste supermarket<br>
-          <input type="checkbox" value="Repair">Repair broken or damaged items at your nearest repair cafe<br>
-          <input type="checkbox" value="freecycle">List your unwanted items on Freecycle to find a better home<br>
-          <input type="checkbox" value="Talk">Talk to your colleagues, friends and family about environmental issues and how you can make a difference<br>
-          <input type="checkbox" value="eat">Make your own breaksfast, lunch and dinner with fresh ingredients<br><br>      
+         <input type="checkbox" id = "pledge1"  name = "pledge1" value =" waterBottle">
+         <label for="pledge1"><b>Fill up and use a re-usable water-bottle<b></label><br>
+
+          <input type="checkbox" id ="pledge2" name = "pledge2" value="resusableCup"><label for ="pledge2"><b>Bring a re-usable coffee cup for your daily Pret/Starbucks Coffee<b></label><br>
+
+          <input type="checkbox" id = "pledge3" name= "pledge3" value="cycle"><label for = "pledge3"><b>Cycle to work<b></label><br>
+
+          <input type="checkbox" id = "pledge4" name ="pledge4" value="clothes"><label for = "pledge4"><b>Commit to buying no new clothes for a month<b></label><br>
+
+          <input type="checkbox" id = "pledge5" name = "pledge5" value="rent_clothes"><label for = "pledge5"><b>Rent an item of clothing for a special occasion instead of buying new<b></label><br>
+
+          <input type="checkbox" id = "pledge6" name ="pledge6" value="less_meat"><label for= "pledge6"><b>Eat less meat<b></label><br>
+
+          <input type="checkbox" id = "pledge7" name = "pledge7" value="grow_your_own"><label for = "pledge7"><b>Grow your own vegetables or buy local food<b></label><br>
+
+          <input type="checkbox" id = "pledge8" name = "pledge8" value="no-lift"><label for = "pledge8"><b>Walk the stairs instead of taking the lift<b></label><br>
+
+          <input type="checkbox" id="pledge9" name="pledge9" value="single_use_plastic"><label for = "pledge9"><b>Cut out single use plastic<b></label><br>
+
+          <input type="checkbox" id = "pledge10" name = "pledge10" value="litter"><label for = "pledge10"><b>Pick up litter from your local neighbourhood</b></label><br>
+
+          <input type="checkbox" id = "pledge11" name="pledge11" value="email_MP"><label for = "pledge11"><b>Email you local MP to endorse anti-plastic legislation</b></label><br>
+
+          <input type="checkbox" id = "pledge12" name = "pledge12" value="Refill_app"><label for = "pledge12"><b>Download the Refill App to find your nearest refill point and use it</b></label><br>
+
+          <input type="checkbox" id = "pledge13" name = "pledge13" value="supermarket"><label for = "pledge13"><b>Shop at your nearest zero-waste supermarket</b></label><br>
+
+          <input type="checkbox"  id = "pledge14" name = "pledge14" value="Repair"><label for = "pledge14"><b>Repair broken or damaged items at your nearest repair cafe</b></label><br>
+
+          <input type="checkbox" id = "pledge15" name= "pledge15" value="freecycle"><label for = "pledge15"><b>List your unwanted items on Freecycle to find a better home</b></label><br>
+
+          <input type="checkbox" id = "pledge16" name= "pledge16" value="Talk"><label for = "pledge16"><b>Talk to your colleagues, friends and family about environmental issues and how you can make a difference</b></label><br>
+
+          <input type="checkbox" id="pledge17" name="pledge17" value="eat"><label for = "pledge17"><b>Make your own breaksfast, lunch and dinner with fresh ingredients</b></label><br>
+          
+          <br>      
           
         <!--submit button-->
           <center><input type="submit" value="Enter Your Pledge" /></center>
@@ -32,9 +51,8 @@
         </fieldset>      
       </form>
     </div>
-    
-
 
 </body>
 
 {% endblock %}
+

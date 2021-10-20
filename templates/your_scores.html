@@ -2,49 +2,106 @@
 {% block content %} 
 <head>
     <meta charset="UTF-8">
-   <title>Carbon Crush Your Scores</title>
+    <title>Carbon Crush Your Scores</title>
     <link rel="stylesheet" href="lboard_styles.css">
 </head> 
 
 <body>
-    
-      <div class="leaderboard-title">
-        <center><h5><b>Your Scores</b></h5></center>
-    
-      </div>
 
-    <div>
-    <table class="leaderboard-table">
-        <thead >
-            <tr class="table_header">
-                <th>Date</th>
-                <th>Personal Results</th>
-                <th>Pledge Score</th>
-                <th>Off-set score</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>18/10/2021</td>
-                <td>140</td> 
-                <td>30</td>
-                <td><b>110</b></td>
-            </tr>
-            <tr>
-                <td>25/10/2021</td>
-                <td>130</td> 
-                <td>40</td>
-                <td><b>90</b></td>
-            </tr>
-            <tr>
-                <td>01/11/2021</td>
-                <td>200</td> 
-                <td>50</td>
-                <td><b>150</b></td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
+    <div class="container-fluid">
+      
+      <!--PRFOFILE LOGIN-->
+
+      <article class="carbon_crush">
+      
+        <h5><p>Profile</p></h5>
+        
+        <div>
+        <form class="fieldset2" action="/">
+
+        <div class="form-floating mb-3">
+        
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        <label for="name" for="floatingInput"></label> 
+      
+        </div><!--END EMAIL SIGN-IN-->
+
+        <div class="form-floating mb-3">
+
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        <label class="fieldset2" for="pwd"></label>
+        
+        <br>
+
+        </div><!--END PASSWORD SIGN-IN-->
+
+        <center><button class="btn" type="sign_in">Sign In</button></center>
+      
+        <br><br>
+      
+        </form>
+        </div><!--END SIGN-IN BOX-->
+
+        <div class="welcome">
+
+        <center><h5><p><b>WELCOME</b></p></h5></center>
+        
+        <center><h5><p><b><i>Kate</i></b></p></h5></center>
+        <br>
+        
+        <h5><p><b>Best Score:</b> 90</p></h5>
+        <h5><p><b>Your Team:</b> Marketing</p></h5>
+        <h5><p><b>Last Login:</b> 01.11.2021</p></h5>
+        
+        </div><!--END WELCOME STATUS BOX-->
+
+      </article><!--END CARBON CRUSH PROFILE-->
+
+      
+
+<br>
+
+    <!--PROFILE YOUR SCORES-->
+    
+      <div>
+      <center><h5><b>Your Scores</b></h5></center>
+      </div><!--END YOUR SCORES HEADING-->
+
+      <div>
+        <table class="leaderboard-table">
+            <thead >
+                <tr class="table_header">
+                    <th>Date</th>
+                    <th>Carbon Footprint</th>
+                    <th>Pledge Score</th>
+                    <th>Off-set Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>18/10/2021</td>
+                    <td>140</td> 
+                    <td>30</td>
+                    <td><b>110</b></td>
+                </tr>
+                <tr>
+                    <td>25/10/2021</td>
+                    <td>130</td> 
+                    <td>40</td>
+                    <td><b>90</b></td>
+                </tr>
+                <tr>
+                    <td>01/11/2021</td>
+                    <td>200</td> 
+                    <td>50</td>
+                    <td><b>150</b></td>
+                </tr>
+            </tbody>
+        </table>
+      </div><!--END YOUR SCORES TABLE-->
+
+    </div><!--END CONTAINER-FLUID-->
+       
 
     
 </body>
