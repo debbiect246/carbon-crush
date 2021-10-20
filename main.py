@@ -13,9 +13,24 @@ def info():
     return flask.render_template('info.html')
 
 #displays pledge page
-@app.route('/pledge/', methods =['GET', 'POST'])
+@app.route('/pledge/', methods =['GET','POST'])
 def pledge():
-     return flask.render_template('pledge.html')
+  if flask.request.method == "POST":
+    print(flask.request.form.getlist('pledges'))
+    return 'Your pledges have been recorded'
+  return flask.render_template('pledge.html')
+
+#second route for pledge page writes data from
+#pledge form to /data/pledgesmade.json File
+#@app.route('/send_pledge/', methods = ['POST'])
+#def send_pledge():    
+  #pledges=flask.request.form['pledges']
+  #pledgefile = open("data.pledgesmade.json", "a")
+  #pledgefile.write(pledges)
+  #message = "Your pledge has been recorded"
+  #print(message)
+  #return flask.render_template("index.html")
+  
     
 #displays contact page 
 @app.route('/contact/')
@@ -23,9 +38,15 @@ def contact():
     return flask.render_template('contact.html')
 
 #displays calculator page
-@app.route('/calculator/')
+@app.route('/calculator/' , methods = ['GET' , 'POST'])
 def calculator():
-    return flask.render_template('calculator.html')
+
+  #if (request.method == "POST") and ('driven_miles' in request.form) and ('type_car' in request.form):
+   # how_many_car = float(request.form.get('driven_miles'))
+    #type_car = float(request.form.get('type_car'))
+  
+  
+  return flask.render_template('calculator.html')
 
 #displays leaderboard
 @app.route('/leaderboard/')
