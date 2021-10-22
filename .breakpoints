@@ -24,6 +24,14 @@
         "index": 1130
       }
     ],
+    "templates/qame_home.html": [
+      {
+        "id": "7c825548-b4d5-4a89-aa38-decdae75bfb4",
+        "line": 18,
+        "version": 1,
+        "index": 368
+      }
+    ],
     "templates/quiz.js": [
       {
         "id": "042968f0-2768-4cdf-bcde-3cb210a8f25a",

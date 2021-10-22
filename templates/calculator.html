@@ -2,77 +2,67 @@
 {% block content %} 
 
   <body>
-    <form action="#" method="POST">
-    <h2> Carbon Calculator </h2>
+    <form action="/" method="POST" name="carbon_calculate">
+      <h2> Carbon Calculator </h2>
+      
     {% set carbon_emission = 0 %}
-    <p> Welcome to the Carbon Calculator!! Through a series of questions about your lifestyle, our calculator will give you an estimate for how much carbon you produce each year. </p>
-    <h4> Travel </h4>
-    <p> We all don't realise just how much we rely on machine powered methods of travel such as cars, buses and trains to carry out our daily lives. But is this at the cost of the planet?  </p>
-    <h5> Car </h5>
-    <p> How many kilometres do you drive a year on average? If you don't drive a car enter 0. </p>
-    <input type="int" name = "driven_miles">
-    <br>
-    <p> What description best fits the type of your car </p> 
-    <ol>
-      <li> I don't drive a car!!
-      <li> Petrol </li> 
-      <li> Diesel </li> 
-      <li> Hybrid </li> 
-      <li> Electric </li> 
-    </ol> 
-    <p> Enter a number betwen 1 and 5. </p>
-    <input type="float" name = "type_car">
-    <br>
-    <br>
-    <h5> Bus </h5> 
-    <p>Whilst public transport is known to lower your carbon emissions, they still emit some into the atmosphere. </p> 
-    <p> How many times a week on average do you get the bus? If you don't take the bus, enter 0. If you do, please enter a number greater than 0 (must be a whole number). : </p>
-    <input type="int" name = "bus_how_many">
-    <br>
-    <p> What is the average length of your bus journey? Decimal answers are accepted, so 0.5 for 30 minutes for example. Enter 0 if you don't take the bus : </p>
-    <input type="float" name = "bus_how_long">
+      <p> Welcome to the Carbon Calculator!! Through a series of questions about your lifestyle, our calculator will give you an estimate for how much carbon you produce each year. </p>
+      <h4> Travel </h4>
+      <p> We all don't realise just how much we rely on machine powered methods of travel such as cars, buses and trains to carry out our daily lives. But is this at the cost of the planet?  </p>
+      <h5> Car </h5>
+      <p> How many kilometres do you drive a year on average? If you don't drive a car enter 0. </p>
+      <input type="int" name = "driven_miles">
+      <br>
+      <p> What description best fits the type of your car </p> 
+      <ol>
+        <li> I don't drive a car!!
+        <li> Petrol </li> 
+        <li> Diesel </li> 
+        <li> Hybrid </li> 
+        <li> Electric </li> 
+      </ol> 
+      <p> Enter a number betwen 1 and 5. </p>
+      <input type="int" name = "type_car">
+      <br>
+      <br>
+      <h5> Bus </h5> 
+      <p>Whilst public transport is known to lower your carbon emissions, they still emit some into the atmosphere. </p> 
+      <p> How many times a week on average do you get the bus? If you don't take the bus, enter 0. If you do, please enter a number greater than 0 (must be a whole number). : </p>
+      <input type="int" name = "bus_how_many">
+      <br>
+      <p> What is the average length of your bus journey in minutes? Please make sure to input a non-decimal number: </p>
+      <input type="float" name = "bus_how_long">
 
-    <br>
-    <br>
+      <br>
+      <br>
 
-    <h5> Train / Tube </h5> 
-    <p> How many times a week on average do you get the train/tube? If you don't take the bus, enter 0. If you do, please enter a number greater than 0 (must be a whole number). : </p>
-    <input type="int" name = "train_how_many">
-    <br>
-    <p> What is the average length of your train/tube journey? Decimal answers are accepted, so 0.5 for 30 minutes for example. Enter 0 if you don't take the bus : </p>
-    <input type="float" name = "train_how_long">
+      <h5> Train / Tube </h5> 
+      <p> How many times a week on average do you get the train/tube? If you don't take the bus, enter 0. If you do, please enter a number greater than 0 (must be a whole number). : </p>
+      <input type="int" name = "train_how_many">
+      <br>
+      <p> What is the average length of your train/tube journey in minutes? Enter 0 if you don't take the bus : </p>
+      <input type="float" name = "train_how_long">
 
-    <h5> Flying </h5> 
-    <p> The use of air travel has an enormous impact on your CO2 emmissions!! </p> 
-    <p> How many hours do you fly on average a year? Decimal answers are accepted, so if you fly for 9 hours and 30 minutes a year, you would input 9.5 : 
-    <input type="float" name = "fly_how_long">   
- 
+      <h5> Flying </h5> 
+      <p> The use of air travel has an enormous impact on your CO2 emmissions!! </p> 
+      <p> How many hours do you fly on average a year? Decimal answers are accepted, so if you fly for 9 hours and 30 minutes a year, you would input 9.5 : 
+      <input type="float" name = "fly_how_long"> 
+      <br>
+      <br>  
+      
 
-
-
-
-
-
-   
-
-
-
+      <button type="submit" value="submit">Calculate!!</button>
     </form>
+
+    {% if carbon_emission %}
+      <p> Your carbon footprint is : {{carbon_emission}} </p> 
+    
+    {% endif %}
+
+    
+
   </body>  
 
-
-<!--
-<body>
-    <div class="container-fluid">
-      <div class="text-hover">
-        <center><h5><b>Track your <a href="{{ url_for('quiz') }}">Carbon Footprint</a></b></h5>
-
-        <h5><b>Make your <a href="{{ url_for('pledge') }}">Environmental Pledge</a></b></h5></center>      
-      </div>
-    </div>
-</body>
-
--->
 
 
 
