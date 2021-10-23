@@ -1,7 +1,36 @@
 {% extends 'base.html' %}
 {% block content %}
-<body>
 
+<body>
+      <center><h5><b>Environmental Pledge</b></h5></center>
+<br>
+
+    <div>
+
+    {% if pledgesresult %}
+      <h5><p>You're on your way to becoming an environmental superstar!</p><p>Your pledges for this week are:</p></h5>
+      {%for each in pledgesresult%}
+      <h5><p class="CarbonCrush3"> * {{each}}</p></h5>
+
+      {%endfor%}
+      
+      <!--EXAMPLE PURPOSES-->
+      <center><button onclick="myFunction()" class="btn"><a href="{{ url_for('your_scores_profile') }}">Save Your Score</a></button></center>
+      <!--END EXAMPLE PURPOSES-->
+
+    {% endif %}
+
+    <center><img src="../static/images/CC - icon green mail.png" alt="Carbon Crush" style="width:35%;"></center>
+
+      <h5 class="text-hover"><p>Off-set your <a href="{{ url_for('calculator') }}">Carbon Footprint</a> score by making your Environmental Pledge for the next 7 days.</p>
+      <!--Select items to pledge for this week.-->
+      <p>Select your pledge actions from the following items.</p>
+      <p>Press Save Score to add your results to your profile.</h5></p>
+
+    </div><!--END TEXT INTRO-->
+
+    <br>
+    
     <div>
       <form action ="#" method = "POST" >      
         <fieldset class="checkbox">
@@ -45,13 +74,25 @@
           <br>      
           
         <!--submit button-->
-          <center><input type="submit" value="Enter Your Pledge" /></center>
+          <center><input type="submit" value="Enter Your Pledge" class="btn2"/></center>
           
           <br>
         </fieldset>      
       </form>
-    </div>
+    </div><!--END FORM-->
 
+<!--PLEDGE RESULTS-->
+  
+    {% if pledgesresult %}
+      <p class="centre"> Your pledges for this week are :</p> 
+        {%for each in pledgesresult%}
+        <p>{{each}}</p>
+        {%endfor%}
+    {% endif %}
+
+<!--END PLEDGE RESULTS-->         
+    
+    
 </body>
 
 {% endblock %}

@@ -1,1 +1,1 @@
-['Grow your own vegetables', 'Take the stairs']
+['Use a waterBottle', ' Use a resusableCup', 'Use fresh ingredients']

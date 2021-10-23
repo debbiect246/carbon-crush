@@ -25,8 +25,7 @@ body {
   background-size: cover;
   position: relative;
   margin: 0 auto;
-  
-  }
+}
 
 .earthcontainer .content {
   position: absolute;
@@ -38,13 +37,9 @@ body {
   padding: 20px;
 }
 
-
-
-
 .centreimage{
   text-align:center;
   display:block;
-
 }
 
 .centre{
@@ -79,10 +74,12 @@ body {
 .navbar{
   position: fixed;
   width: 100%;
+  height: 20%;
+  font-size: 100%;
   border: none;
   outline: none;
   shadow: none;
-  background-color: #F4279D;
+  background-color: #223830;
   color: #F4279D;
   text-align: center;
   z-index: 10;
@@ -124,6 +121,14 @@ body {
   border-radius: 30px;
 }
 
+.CC_logo{
+ padding-top: 150px;
+}
+
+.GQ_logo{
+ padding-top: 75px;
+}
+
 /* Contact form styling */
 .field {
   margin-bottom: 10px;
@@ -146,7 +151,7 @@ input[type="submit"] {
   display: block;
   padding: 6px 30px;
   font-size: 14px;
-  background-color: #68C462;
+  background-color: #F4279D;
   color: #fff;
   border: none
 }
@@ -155,11 +160,50 @@ input[type="submit"] {
   color: #ffffff;
   background: #F4279D;
   border-radius: 3px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .btn:hover{
   color: #68C462;
   background: #F4279D;
+}
+
+.btn a:hover{
+  color: #68C462;
+  background: #F4279D;
+}
+
+.btn a{
+  color: #ffffff;
+  background: #F4279D;
+  text-decoration: none;
+}
+
+.btn2{
+  color: #ffffff;
+  background: #F4279D;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.btn2:hover{
+  color: #68C462;
+  background: #F4279D;
+}
+
+.btn2 a:hover{
+  color: #68C462;
+  background: #F4279D;
+}
+
+.btn2 a{
+  color: #ffffff;
+  background: #F4279D;
+  text-decoration: none;
 }
 
 .fieldset{
@@ -170,6 +214,18 @@ input[type="submit"] {
 }
 
 .fieldset2{
+  background: #FFFFFF;
+  color: #F4279D;
+  border-radius: 6px;
+  padding-right: 35px;
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 100%;
+  font-size: 18px;
+  float: left;
+}
+
+.fieldset3{
   background: #FFFFFF;
   color: #F4279D;
   border-radius: 6px;
@@ -216,13 +272,32 @@ input[type="submit"] {
   padding-bottom: 5px;
 }
 
+.carbon_crush2{
+  background-color:#68C462;
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+  color: #ffffff;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.CarbonCrush3{
+  color:#68C462;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .welcome{
   background: #FFFFFF;
-  color: #F4279D;
+  color: #68C462;
   border-radius: 6px;
-  width: 50%;
-  height: 80%;
-  font-size: 18px;
+  width: 100%;
+  font-size: 1.3em;
   float: right;
   padding-left: 35px;
   padding-right: 35px;
@@ -230,16 +305,128 @@ input[type="submit"] {
   padding-bottom: 5px;
 }
 
+.travel{
+  background: #68C462;
+  width: 100%;
+  color: #ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+
+.car{
+  background: #207D5A;
+  width: 100%;
+  color:#ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+
+.bus{
+  background: #223830;
+  width: 100%;
+  color:#ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+
+.train{
+  background: #207D5A;
+  width: 100%;
+  color:#ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+
+.aeroplane{
+  background: #223830;
+  width: 100%;
+  color:#ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+
+.diet{
+  background: #207D5A;
+  width: 100%;
+  color:#ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+
+.food{
+  background: #223830;
+  width: 100%;
+  color:#ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+
+.energy{
+  background: #68C462;
+  width: 100%;
+  color: #ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+
+.energy_KW{
+  background: #223830;
+  width: 100%;
+  color: #ffffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+
 .column1of3, .column2of3, .column3of3 {
   width: 30%;
   float: left;
   margin: 10px;
   clear: right;
+  text-align: center;
 }
 
 .additional_resources{
   clear: both;
 }
+
+.additional_resources_menu1,
+.additional_resources_menu2,.additional_resources_menu3,.additional_resources_menu4, .additional_resources_menu5, .additional_resources_menu6, .additional_resources_menu7,
+.additional_resources_menu8, {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
 
 /*Bootstrap 4 breakpoints */
 /* Small devices (landscape phones, 544px and up) */

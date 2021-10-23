@@ -16,11 +16,19 @@
         "index": 356
       }
     ],
+    "templates/info.html": [
+      {
+        "id": "9ce5b6e7-159e-40c7-8dc0-d5c12a93d928",
+        "line": 83,
+        "version": 3585,
+        "index": 3693
+      }
+    ],
     "templates/leaderboard.html": [
       {
         "id": "3bc38355-d23e-4ec2-860e-b7a6279f3584",
         "line": 46,
-        "version": 248,
+        "version": 256,
         "index": 1130
       }
     ],

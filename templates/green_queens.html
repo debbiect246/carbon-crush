@@ -28,14 +28,20 @@
     <!-- Navigation --> 
     <!-- using bootstrap 4 to style navbar -->
     <div>
-      <nav class="navbar navbar-expand-sm bg-#4279D position-center">
+      <nav class="navbar navbar-expand-sm bg-F4279D position-center">
+        <div class="container-fluid">
+
             <ul>                        
               <li class="nav-item">
                   <a class="nav-link" href="{{ url_for('info') }}">Home</a>
               </li>
+              
+              <li >
+                  <a class="nav-link" href="{{ url_for('pledge') }}">Pledge</a>
+              </li>
 
               <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('calculator') }}">Game</a>
+                  <a class="nav-link" href="{{ url_for('calculator') }}">Calculator</a>
               </li>
 
               <li class="nav-item">
@@ -46,12 +52,17 @@
                   <a class="nav-link" href="{{ url_for('your_scores') }}">Your Scores</a>
               </li>
           </ul>
+        
+        </div><!--END CONTAINER-FLUID-->
+
       </nav>
 </div>
 <br><br><br><br>
+
 <div class="container-fluid">
-    <div class="earthcontainer"> <a href="{{ url_for('info') }}">
-        <center><img src="../static/images/GQ - Natasha.png" alt="Green Queens" style="width:25%;"></center></a>
+    <div class="earthcontainer">
+    <div class="GQ_logo"><a href="{{ url_for('info') }}"><center><img src="../static/images/GQ - Natasha.png" alt="Green Queens" style="width:25%;"></center></a>
+    </div>
     </div>
     
     <center><h5 class="text-hover"><p>Green Queens is a female-led team of creators and developers supporting sustainable lifestyles.</p>

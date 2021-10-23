@@ -1,67 +1,200 @@
 {% extends 'base.html' %}
 {% block content %} 
+<head>
+  <style> 
+    input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+  </style>
+</head>
 
   <body>
-    <form action="/" method="POST" name="carbon_calculate">
-      <h2> Carbon Calculator </h2>
-      
-    {% set carbon_emission = 0 %}
-      <p> Welcome to the Carbon Calculator!! Through a series of questions about your lifestyle, our calculator will give you an estimate for how much carbon you produce each year. </p>
-      <h4> Travel </h4>
-      <p> We all don't realise just how much we rely on machine powered methods of travel such as cars, buses and trains to carry out our daily lives. But is this at the cost of the planet?  </p>
-      <h5> Car </h5>
-      <p> How many kilometres do you drive a year on average? If you don't drive a car enter 0. </p>
-      <input type="int" name = "driven_miles">
-      <br>
-      <p> What description best fits the type of your car </p> 
+    <form action="#" method="POST" name="carbon_calculate">
+    
+    <center><h5><b>Carbon Calculator</b></h5></center>
+<br>
+
+    
+    <h5 class="text-hover"><p>Answer a few questions about your lifestyle to see your Carbon Footprint score.</p>
+    
+    <!--EXAMPLE PURPOSES ONLY-->
+    <p>Press Save Score to add your results to your profile.</p>
+    
+    <p>Off-set your Carbon Footprint score by taking the <a href="{{ url_for('pledge') }}">Environmental Pledge.</a></p><h5>
+    <!--END EXAMPLE PURPOSES ONLY-->
+<br>
+
+<div class="travel">
+  <!--<form> -->
+    <div class="travel">
+    <h2><p>Travel</p></h2>
+    
+    <p><!--We all don't realise just how much we rely on machine powered methods-->Cars, buses, trains, and aeroplanes each have an impact on the environment.<p>
+    </p>Let's better understand your travel needs ... <!--out our daily lives. But is this at the cost of the planet?--></p>
+
+    <br>
+
+    </div><!--END TRAVEL INTRO-->
+    
+    <div class="car">
+
+    <h5><b>Car</b></h5>
+    <p>How many kilometres did you drive in the last 7 days on average?</p><p><i>(If you don't drive a car enter 0.)</i></p>
+    <br>
+    <input type="number" step="any" min ="0" name="driven_miles">
+
+    <br><br>
+    
+    <p>What description best fits the type of your car </p> 
       <ol>
-        <li> I don't drive a car!!
+        <li> I don't drive a car!! </li>
         <li> Petrol </li> 
         <li> Diesel </li> 
         <li> Hybrid </li> 
         <li> Electric </li> 
       </ol> 
-      <p> Enter a number betwen 1 and 5. </p>
-      <input type="int" name = "type_car">
+      <p> Enter a number between 1 and 5. </p>
       <br>
-      <br>
-      <h5> Bus </h5> 
-      <p>Whilst public transport is known to lower your carbon emissions, they still emit some into the atmosphere. </p> 
-      <p> How many times a week on average do you get the bus? If you don't take the bus, enter 0. If you do, please enter a number greater than 0 (must be a whole number). : </p>
-      <input type="int" name = "bus_how_many">
-      <br>
-      <p> What is the average length of your bus journey in minutes? Please make sure to input a non-decimal number: </p>
-      <input type="float" name = "bus_how_long">
+      <input type="number" step="1" min="1" max="5" name="type_car">
 
       <br>
       <br>
 
-      <h5> Train / Tube </h5> 
-      <p> How many times a week on average do you get the train/tube? If you don't take the bus, enter 0. If you do, please enter a number greater than 0 (must be a whole number). : </p>
-      <input type="int" name = "train_how_many">
-      <br>
-      <p> What is the average length of your train/tube journey in minutes? Enter 0 if you don't take the bus : </p>
-      <input type="float" name = "train_how_long">
+      </div><!--END CAR-->
+      <br><br>
+      <div class="bus">
 
-      <h5> Flying </h5> 
-      <p> The use of air travel has an enormous impact on your CO2 emmissions!! </p> 
-      <p> How many hours do you fly on average a year? Decimal answers are accepted, so if you fly for 9 hours and 30 minutes a year, you would input 9.5 : 
-      <input type="float" name = "fly_how_long"> 
+      <h5><b>Bus</b></h5> 
+      <!--<p>Whilst public transport is known to lower your carbon emissions, they still emit some into the atmosphere. </p>--> 
+      <p> How many times in the last 7 days on average did you get the bus? Please enter a round number (1,2,3 ... etc)</p>
+      <p><i>(If you don't take the bus, enter 0.)</i></p>
       <br>
-      <br>  
+      <input type="number" step="1" min="0" name="bus_how_many" >
+      <br><br>
+      <p> What is the average length of your bus journey in minutes? Please enter a round number (1,2,3 ... etc) </p>
+      <br>
+      <input type="number" step="1" min="0" name="bus_how_long">
+
+      <br>
+      <br>
+
+      </div><!--END BUS-->
+      <br><br>
+      <div class="train">
+
+      <h5><b>Train / Tube</b></h5> 
+      <p> How many times in the last 7 days on average did you you get the train/tube? Please enter a round number (1,2,3 ... etc)</p>
+      <p><i>(If you don't take the train, enter 0.)</i></p>
+      <br>
+      <input type="number" step="1"  min="0" name="train_how_many" >
+      <br><br>
+      <p> What is the average length of your train/tube journey in minutes?</p>
+      <p><i>(Enter 0 if you don't take the train.)</i></p>
+      <br>
+      <input type="number" step="1"  min="0" name = "train_how_long" >
+
+      <br>
+      <br>
+
+      </div><!--END TRAIN-->
+      <br><br>
+      <div class="aeroplane">
+
+      <h5><b>Flying</b></h5> 
+      <!--<p> The use of air travel has an enormous impact on your CO2 emmissions!! </p> -->
+      <p> How many hours in the last 7 days on average did you travel by aeroplane? Decimal answers are accepted, so if you fly for 9 hours and 30 minutes a year, you would input 9.5 : 
+      <br><br>
+      <input type="number" step="any" min= "0" name = "fly_how_long"> 
+      <br><br>
       
+      </div><!--END AEROPLANE-->
+      <br><br>
 
-      <button type="submit" value="submit">Calculate!!</button>
+
+  <!-- </form><!--END TRAVEL FORM--> 
+
+</div><!--END TRAVEL-->
+
+<br><br>
+
+<div class="diet">
+  <!-- <form> -->
+
+    <div class="diet">
+    
+    <h2><p>Diet</p></h2>
+    <p> Diet can affect our carbon footprint in a greater way than most of us think.</p>
+    <p> Do you consider what you eat and the ingredients that carry a large carbon cost?</p>
+    <br>
+    
+    </div><!--END DIET INTRO-->
+
+    <div class="food">
+      <h5><b>Food</b></h5>
+      <p> What diet most fits your typical eating habits? </p>
+      <ol>
+        <li> Meat/Fish eater
+        <li> Vegetarian </li>
+        <li> Vegan </li>
+      </ol>
+      <p> Enter a number betwen 1 and 3. </p>
+      <input type="number" step="1" min="1" max="3"  name = "diet_type"> 
+      <br><br>
+    </div><!--END FOOD-->
+    
+  <!-- </form><!--END DIET FORM-->
+
+<br><br>
+</div><!--END DIET-->
+
+<br><br>
+
+<div class="energy">
+<!-- <form> -->
+
+    <div class="energy">
+    <h2>Energy</h2>
+    <p> The type and expediture of energy that an individual or household operates on has the potential to double one's carbon footprint. Acknowleding this measurement is crucial.  </p>
+    <br>
+    
+    </div><!--END ENERGY INTRO-->
+
+    <div class="energy_KW">
+    <h5><b>Energy Consumption</b></h5>
+    <p> Enter the average monthly kilowatts per hour from your electric bill </p>
+    <input type="number" step="any" min="0" name = "energy_usage"> 
+    <br><br>
+    
+    <p> What energy type best fits your energy usage </p>
+    <ol> 
+      <li> Coal </li> 
+      <li> Natural gas </li> 
+      <li> Petroleum </p> 
+      <li> Renewable energy sources </li> 
+    </ol> 
+        <p> Enter a number betwen 1 and 4. </p>
+    <input type="number" step="1" min="1" max="4"  name = "energy_type"> 
+    
+    <br><br>
+    
+    </div><!--END ENERGY KW-->
+
+<br><br>
+</div><!--END ENERGY-->
+
+<br><br>
+
+    <center><button type="submit" value="submit" class="btn">Calculate!!</button></center>
     </form>
 
-    {% if carbon_emission %}
-      <p> Your carbon footprint is : {{carbon_emission}} </p> 
-    
-    {% endif %}
-
-    
-
   </body>  
+
 
 
 
