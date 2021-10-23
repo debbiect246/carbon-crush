@@ -72,7 +72,7 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return ''' <h4>Your carbon footprint is {} </h4>  <br> 
     <p>Let's break down it down: </p>
     <ul>
     <li> Travel : {}  </li> 

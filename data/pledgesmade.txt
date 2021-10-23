@@ -1,1 +1,1 @@
-['Use a waterBottle', ' Use a resusableCup', 'Use fresh ingredients']
+['Take the stairs', 'Cut out single use plastic', 'email your MP']
