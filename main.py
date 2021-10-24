@@ -73,7 +73,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return ''' <h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -85,7 +85,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -96,7 +96,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12* energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -108,7 +108,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -123,7 +123,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -136,7 +136,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -149,7 +149,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -161,7 +161,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -178,7 +178,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -191,7 +191,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -204,7 +204,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -216,7 +216,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -235,7 +235,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -247,7 +247,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 *  energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -258,7 +258,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -270,7 +270,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -284,7 +284,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -297,7 +297,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -310,7 +310,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -322,7 +322,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -339,7 +339,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -352,7 +352,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -365,7 +365,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -377,7 +377,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -400,7 +400,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -412,7 +412,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -423,7 +423,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -435,7 +435,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -448,7 +448,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -461,7 +461,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -474,7 +474,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -486,7 +486,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -503,7 +503,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -516,7 +516,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -529,7 +529,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -541,7 +541,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -562,7 +562,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -574,7 +574,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -586,7 +586,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -598,7 +598,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -611,7 +611,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -624,7 +624,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -637,7 +637,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -649,7 +649,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -666,7 +666,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -679,7 +679,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -692,7 +692,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -704,7 +704,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -724,7 +724,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -736,7 +736,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -747,7 +747,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -759,7 +759,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -772,7 +772,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -785,7 +785,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -798,7 +798,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -810,7 +810,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -827,7 +827,7 @@ def calculator():
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -840,7 +840,7 @@ def calculator():
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -853,7 +853,7 @@ def calculator():
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -865,7 +865,7 @@ def calculator():
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
           return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -891,7 +891,7 @@ def calculator():
         carbon_emission_energy = 0.997 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
         return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -904,7 +904,7 @@ def calculator():
         carbon_emission_energy = 0.408 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
         return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -917,7 +917,7 @@ def calculator():
         carbon_emission_energy = 0.861 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
         return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -929,7 +929,7 @@ def calculator():
         carbon_emission_energy = 0.2 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
         return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -946,7 +946,7 @@ def calculator():
         carbon_emission_energy = 0.997 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
         return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -959,7 +959,7 @@ def calculator():
         carbon_emission_energy = 0.408 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
         return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -972,7 +972,7 @@ def calculator():
         carbon_emission_energy = 0.861 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
         return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
@@ -984,7 +984,7 @@ def calculator():
         carbon_emission_energy = 0.2 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
         return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break down it down: </p>
+    <p>Let's break it down: </p>
     <ul>
     <li> Travel : {}  </li> 
     <li> Diet : {} </li> 
