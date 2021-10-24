@@ -46,6 +46,8 @@ def calculator():
   fly_co2 = 0.115 
   fly_speed = 1000
   global carbon_emission , carbon_emission_travel , carbon_emission_diet, carbon_emission_diet
+  
+  
 
 # Making sure the form was filled in with all the relevant values 
   if flask.request.method == "POST":
