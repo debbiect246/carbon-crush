@@ -1,1 +1,1 @@
-['Eat less meat']
+['Use a waterBottle', 'no new clothes for a month']
