@@ -425,8 +425,22 @@ input[type="submit"] {
   padding-bottom: 5px;
 }
 
+.WelcomeCC1{
+  font-weight: bold;
+  color: #F4279D;
+  padding: 15px;
+  border: 3px solid #f4279D;
+  border-radius: 6px;
+}
 
-
+.WelcomeCC2{
+  background-color: #68C462;
+  color: white;
+  padding: 10px;
+  border: 15px solid #207D5A;
+  margin: 10px;
+  border-radius: 6px;
+}
 
 /*Bootstrap 4 breakpoints */
 /* Small devices (landscape phones, 544px and up) */

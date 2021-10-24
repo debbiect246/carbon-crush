@@ -1,12 +1,25 @@
 {% extends 'base.html' %}
 {% block content %} 
 <body>
+<div>
+  <center><h5><p class="WelcomeCC1"> Welcome to Carbon Crush!<br> An interactive website aimed to get you and your fellow colleagues to become aware of your environmental impact on the world and to start making greener choices. </p></h5></center> <br>
 
+  <div class="WelcomeCC2">
+    <center><h5><p> Use our carbon calculator to see how much carbon you are emitting into the atmosphere each year. Was your score higher than you were expecting? Then take part in our environmental pledges to improve your score and beat your colleagues in being your best sustainable self! </p></h5></center> <br>
+  
+    <center><h5><p>All scores can be viewed on our leadership board, where you can see how well you’re doing alongside other departments in your company. </p></h5></center><br>
+
+    <center><h5><p>Sign up and start tracking your sustainable journey today!</p></h5></center>
+  </div>
+</div>
+
+<br>
     <div class="container-fluid">
       <div class="text-hover">
         <center><h5><b>Track your <a href="{{ url_for('calculator') }}">Carbon Footprint</a></b></h5>
 
-        <h5><b>Make your Environmental <a href="{{ url_for('pledge') }}">Pledge</a></b></h5></center>      
+        <h5><b>Make your <a href="{{ url_for('pledge') }}">Environmental Pledge</a></b></h5>
+        </center>      
       </div>
     </div>
 

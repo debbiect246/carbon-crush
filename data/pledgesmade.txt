@@ -1,1 +1,1 @@
-['Take the stairs', 'Cut out single use plastic', 'email your MP']
+[' Use a resusableCup', 'rent clothes', 'Eat less meat', 'Grow your own vegetables']
