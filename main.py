@@ -46,8 +46,6 @@ def calculator():
   fly_co2 = 0.115 
   fly_speed = 1000
   global carbon_emission , carbon_emission_travel , carbon_emission_diet, carbon_emission_diet
-  
-  
 
 # Making sure the form was filled in with all the relevant values 
   if flask.request.method == "POST":
@@ -74,47 +72,47 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return ''' <h4>Your carbon footprint is {} </h4>  <br> 
+          return ''' <h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break it down: </p>
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
+    <p>Let's break it down: kg/yr </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12* energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {}  kg/yr </li> 
+    <li> Diet : {} kg/yr  </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -124,12 +122,12 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -137,12 +135,12 @@ def calculator():
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -150,24 +148,24 @@ def calculator():
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break it down: </p>
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
+    <p>Let's break it down: kg/yr </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr  </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -179,12 +177,12 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -192,12 +190,12 @@ def calculator():
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -205,24 +203,24 @@ def calculator():
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {}kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -236,47 +234,47 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break it down: </p>
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
+    <p>Let's break it down: kg/yr </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 *  energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -285,12 +283,12 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -298,12 +296,12 @@ def calculator():
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -311,24 +309,24 @@ def calculator():
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {}kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {}kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -340,12 +338,12 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr  </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -353,12 +351,12 @@ def calculator():
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -366,24 +364,24 @@ def calculator():
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {}kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -401,47 +399,47 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr   </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
       elif (diet_type == 2):
@@ -449,12 +447,12 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr  kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -462,12 +460,12 @@ def calculator():
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr  </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -475,24 +473,24 @@ def calculator():
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -504,12 +502,12 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -517,12 +515,12 @@ def calculator():
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {}  kg/yr </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -530,24 +528,24 @@ def calculator():
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -563,48 +561,48 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
       elif (diet_type == 2):
@@ -612,12 +610,12 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr  </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -625,12 +623,12 @@ def calculator():
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -638,24 +636,24 @@ def calculator():
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -667,12 +665,12 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -680,12 +678,12 @@ def calculator():
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -693,24 +691,24 @@ def calculator():
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -725,47 +723,47 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr   </li> 
+    <li> Diet : {} kg/yr  </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {}kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr  </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
       elif (diet_type == 2):
@@ -773,12 +771,12 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -786,12 +784,12 @@ def calculator():
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -799,24 +797,24 @@ def calculator():
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {}kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -828,12 +826,12 @@ def calculator():
         if energy_type == 1:
           carbon_emission_energy = 0.997 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -841,12 +839,12 @@ def calculator():
         elif energy_type == 2:
           carbon_emission_energy = 0.408 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {}kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -854,24 +852,24 @@ def calculator():
         elif energy_type == 3 :
           carbon_emission_energy = 0.861 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
         elif energy_type == 4 :
           carbon_emission_energy = 0.2 * 12 * energy_usage
           carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-          return '''<h4>Your carbon footprint is {} </h4>  <br> 
+          return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr  </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -892,12 +890,12 @@ def calculator():
       if energy_type == 1:
         carbon_emission_energy = 0.997 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-        return '''<h4>Your carbon footprint is {} </h4>  <br> 
+        return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr   </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -905,12 +903,12 @@ def calculator():
       elif energy_type == 2:
         carbon_emission_energy = 0.408 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-        return '''<h4>Your carbon footprint is {} </h4>  <br> 
+        return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -918,24 +916,24 @@ def calculator():
       elif energy_type == 3 :
         carbon_emission_energy = 0.861 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-        return '''<h4>Your carbon footprint is {} </h4>  <br> 
+        return '''<h4>Your carbon footprint is {}kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {}kg/yr  </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
       elif energy_type == 4 :
         carbon_emission_energy = 0.2 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-        return '''<h4>Your carbon footprint is {} </h4>  <br> 
+        return '''<h4>Your carbon footprint is {}kg/yr  </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -947,12 +945,12 @@ def calculator():
       if energy_type == 1:
         carbon_emission_energy = 0.997 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-        return '''<h4>Your carbon footprint is {} </h4>  <br> 
+        return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -960,12 +958,12 @@ def calculator():
       elif energy_type == 2:
         carbon_emission_energy = 0.408 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-        return '''<h4>Your carbon footprint is {} </h4>  <br> 
+        return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {}kg/yr  </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
@@ -973,24 +971,24 @@ def calculator():
       elif energy_type == 3 :
         carbon_emission_energy = 0.861 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-        return '''<h4>Your carbon footprint is {} </h4>  <br> 
+        return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
     <p>Let's break it down: </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
       elif energy_type == 4 :
         carbon_emission_energy = 0.2 * 12 * energy_usage
         carbon_emission = carbon_emission_diet + carbon_emission_energy + carbon_emission_travel 
-        return '''<h4>Your carbon footprint is {} </h4>  <br> 
-    <p>Let's break it down: </p>
+        return '''<h4>Your carbon footprint is {} kg/yr </h4>  <br> 
+    <p>Let's break it down: kg/yr </p>
     <ul>
-    <li> Travel : {}  </li> 
-    <li> Diet : {} </li> 
-    <li> Energy : {} </li> 
+    <li> Travel : {} kg/yr  </li> 
+    <li> Diet : {} kg/yr </li> 
+    <li> Energy : {} kg/yr </li> 
     </ul>
     '''.format(carbon_emission , carbon_emission_travel, carbon_emission_diet, carbon_emission_energy)
 
